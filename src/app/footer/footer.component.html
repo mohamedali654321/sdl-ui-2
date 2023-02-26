@@ -1,0 +1,205 @@
+<!-- 
+<div style="background-color:#1b3c8b !important ;color:#fff;padding-bottom: 10px;border-bottom: 1px solid #FFF; padding-top: 10px;" class="content-container  container-fluid">
+  <div><div class=" col-12 " >
+
+    <h5 class="mt-0 mb-2 pt-1 pb-1">
+      {{'footer.top.content6' | translate}}        </h5>
+   <div style="color: #fff;" class=" font-12 mb-1">
+    {{'footer.top.content2' | translate}}</div>
+    <ul class="list-inline font-16 mb-2 social-list">
+     <li class="list-inline-item m-0">
+         <a id="lnkfacebook" class="facebookIcon" href="https://www.facebook.com/KnowledgewareTech/" target="_blank">
+              <span class="fa-stack">
+                 <i class="fas fa-circle fa-stack-2x"></i>
+                 <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+               </span></a>
+
+     </li>
+     <li class="list-inline-item m-0">
+       <a id="lnktwitter" class="twitterIcon" href="https://twitter.com/KnowledgewareT" target="_blank">
+               <span class="fa-stack">
+                 <i class="fas fa-circle fa-stack-2x"></i>
+                 <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+               </span>
+         </a>
+     </li>
+     <li class="list-inline-item m-0">
+         <a id="lnklinkedIn" class="linkedinIcon" href="https://www.linkedin.com/company/knowledgeware-technologies-inc/" target="_blank">
+               <span class="fa-stack">
+                 <i class="fas fa-circle fa-stack-2x"></i>
+                 <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+               </span>
+         </a>
+     </li>
+
+     <li class="list-inline-item m-0">
+      <a id="lnklinkedIn" class="linkedinIcon" href="https://youtube.com/channel/UCWzTZ01CmXFYz48ogIBaHUg" target="_blank">
+            <span class="fa-stack">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+            </span>
+      </a>
+  </li>
+
+
+
+
+   </ul>
+
+
+
+        <div style="color: #fff;" class="font-14 mt-1 mb-1 ">
+          {{'footer.top.content3' | translate}} <a class="text-white"
+            routerLink="info/feedback">{{ 'footer.link.feedback' | translate}}</a>!</div>
+  </div>
+
+  </div>
+
+  <div class="col-lg-3 col-md-6 col-xs-6 footer-widget">
+    <h5 class="widget-title mt-0 mb-2 pt-1 pb-1">{{'footer.top.content1' | translate}}</h5>
+    <p style="font-size:13px ;" class="text-white">
+      {{'footer.top.content4' | translate}}
+    </p>
+  </div>
+
+
+
+  </div>
+  <footer class="text-lg-start">
+
+
+ 
+    <div class="bottom-footer p-1 d-flex justify-content-center align-items-center text-white">
+      <div class="content-container  container-fluid">
+
+        <div>
+          <ul class="footer-info list-unstyled small d-flex justify-content-center mb-0">
+            <li>
+              <a class="text-white" href="#"
+                 (click)="showCookieSettings()">{{ 'footer.link.cookies' | translate}}</a>
+            </li>
+            <li>
+              <a class="text-white"
+                 routerLink="info/privacy">{{ 'footer.link.privacy-policy' | translate}}</a>
+            </li>
+            <li>
+              <a class="text-white"
+                 routerLink="info/end-user-agreement">{{ 'footer.link.end-user-agreement' | translate}}</a>
+
+            </li>
+          </ul>
+        </div>
+
+          <div>
+            <p class="bottom-footer  d-flex justify-content-center align-items-center rights" >{{'footer.link.copyrights' | translate}}</p>
+          </div>
+
+
+      <div>
+        <p class="m-0">
+          <a class="text-white"
+             href="http://www.dspace.org/">{{ 'footer.link.dspace' | translate}}</a>
+          {{ 'footer.copyright' | translate:{year: dateObj | date:'y'} }}
+          <a class="text-white"
+             href="https://www.lyrasis.org/">{{ 'footer.link.lyrasis' | translate}}</a>
+            {{ 'footer.link.arabizationsBy' | translate}}
+          <a class="text-white" target="_blank"
+             href="http://kwareict.com/ar"> <img style="width: 130px; height: 30px;" src="assets/images/kware_logo_ar.png" />
+            </a>      </p>
+
+          </div>
+
+      </div>
+    </div>
+  </footer> -->
+
+
+
+
+
+  <footer style="background-color: #1b3c8b;" class="text-lg-start">
+    <div *ngIf="showTopFooter" class="top-footer">
+      <!-- Grid container -->
+      <div class=" container p-4">
+        <!--Grid row-->
+        <div class="row">
+  
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-uppercase">Footer Content</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a routerLink="./" class="">Lorem ipsum</a>
+              </li>
+              <li>
+                <a routerLink="./" class="">Ut facilisis</a>
+              </li>
+              <li>
+                <a routerLink="./" class="">Aenean sit</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <h5 class="text-uppercase">Footer Content</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a routerLink="./" class="">Suspendisse potenti</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Footer Content</h5>
+  
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+              molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+              voluptatem veniam, est atque cumque eum delectus sint!
+            </p>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="bottom-footer p-1 d-flex justify-content-center align-items-center text-white">
+      <div class="content-container">
+        <p class="m-0">
+          <span class="text-white"
+             >{{ 'footer.link.copyrights' | translate | translate}}</span>
+          <!-- {{ 'footer.copyright' | translate:{year: dateObj | date:'y'} }} -->
+          <!-- <a class="text-white"
+             href="https://www.lyrasis.org/">{{ 'footer.link.lyrasis' | translate}}</a> -->
+        </p>
+        <ul class="footer-info list-unstyled small d-flex justify-content-center mb-0">
+          <li>
+              <a class="text-white" href="javascript:void(0);"
+               (click)="showCookieSettings()">{{ 'footer.link.cookies' | translate}}</a>
+          </li>
+          <li *ngIf="showPrivacyPolicy">
+            <a class="text-white"
+               routerLink="info/privacy">{{ 'footer.link.privacy-policy' | translate}}</a>
+          </li>
+          <li *ngIf="showEndUserAgreement">
+            <a class="text-white"
+               routerLink="info/end-user-agreement">{{ 'footer.link.end-user-agreement' | translate}}</a>
+          </li>
+          <li>
+            <a class="text-white"
+               routerLink="info/feedback">{{ 'footer.link.feedback' | translate}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Copyright -->
+  </footer>

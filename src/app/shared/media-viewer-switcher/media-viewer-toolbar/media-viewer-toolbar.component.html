@@ -1,0 +1,53 @@
+<div class="viewer-toolbar" *ngIf="fileURL">
+  <div class="viewer-toolbar-content">
+    <div class="viewer-toolbar-controls">
+      <ul>
+        <li
+          *ngIf="
+            !fileFormat.startsWith('video') && !fileFormat.startsWith('audio')
+          "
+        >
+          <button
+            class="viewer-toolbar-btn"
+            (click)="
+              fileFormat === 'application/pdf'
+                ? addWatermarkToPdfFile('print')
+                : printOtherFilesFormats()
+            "
+            dsStopContextMenu
+          >
+            <i class="fas fa-print"></i>
+          </button>
+        </li>
+        <li>
+          <button
+            class="viewer-toolbar-btn"
+            (click)="
+              fileFormat === 'application/pdf'
+                ? addWatermarkToPdfFile('download')
+                : downloadOtherFilesFormat()
+            "
+            dsStopContextMenu
+          >
+            <i class="fas fa-download"></i>
+          </button>
+        </li>
+        <li>
+          <button
+            class="viewer-toolbar-btn"
+            (click)="openFullscreen()"
+            dsStopContextMenu
+          >
+            <i class="fas fa-expand"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="viewer-toolbar-filename">{{ fileName }}</div>
+    <div class="viewer-toolbar-close">
+      <button class="viewer-toolbar-btn" (click)="closeViewer()">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</div>

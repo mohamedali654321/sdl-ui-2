@@ -1,0 +1,19 @@
+<div>
+  <!-- Because this template is used by default, we will additionally test for representation type and display accordingly -->
+  <span *ngIf="(metadataRepresentation.representationType=='plain_text') && !isLink()" class="dont-break-out">
+    <!-- kware-edit make author hyperlink -->
+    <span><a [href]="filterSearch()">{{checkAuthor(metadataRepresentation.getValue())}}</a> </span>
+    <!-- kware-edit end -->
+  </span>
+  <a *ngIf="(metadataRepresentation.representationType=='plain_text') && isLink()" class="dont-break-out"
+  target="_blank" [href]="metadataRepresentation.getValue()">
+      <span><a [href]="filterSearch()">{{checkAuthor(metadataRepresentation.getValue())}}</a> </span>
+  </a>
+  <span *ngIf="(metadataRepresentation.representationType=='authority_controlled')" class="dont-break-out">{{checkAuthor(metadataRepresentation.getValue()) | kwareTranslate}}</span>
+  <a *ngIf="(metadataRepresentation.representationType=='browse_link')"
+     class="dont-break-out ds-browse-link"
+     [routerLink]="['/browse/', metadataRepresentation.browseDefinition.id]"
+     [queryParams]="getQueryParams()">
+    {{checkAuthor(metadataRepresentation.getValue()) | kwareTranslate}}
+  </a>
+</div>
